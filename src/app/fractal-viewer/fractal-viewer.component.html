@@ -1,0 +1,8 @@
+<svg width="2048" height="2048" viewBox="0 0 1000 1000" style="border: 1px solid #cccccc;" preserveAspectRatio="xMinYMin">
+  <circle [attr.cx]="fractalGeneratorService.a.x" [attr.cy]="fractalGeneratorService.a.y" r="2" fill="blue" />
+  <circle [attr.cx]="fractalGeneratorService.b.x" [attr.cy]="fractalGeneratorService.b.y" r="2" fill="green" />
+  <circle [attr.cx]="fractalGeneratorService.c.x" [attr.cy]="fractalGeneratorService.c.y" r="2" fill="orange" />
+
+
+  <circle *ngFor="let p of points" [attr.cx]="p.x" [attr.cy]="p.y" r="1" fill="red" />
+</svg>
