@@ -14,9 +14,9 @@ export class FractalViewerComponent implements OnInit {
 
   private subscription: Subscription;
 
-  private points : Point[] = [];
+  public points : Point[] = [];
 
-  constructor(private fractalGeneratorService:FractalGeneratorService){}
+  constructor(public fractalGeneratorService:FractalGeneratorService){}
 
   ngOnInit(){
     let width = 900;

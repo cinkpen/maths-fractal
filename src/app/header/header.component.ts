@@ -8,7 +8,7 @@ import {FractalGeneratorService} from '../fractal-generator.service'
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private fractalGeneratorService:FractalGeneratorService) { }
+  constructor(public  fractalGeneratorService:FractalGeneratorService) { }
 
   ngOnInit() {
   }
