@@ -1,8 +1,17 @@
 <svg width="2048" height="2048" viewBox="0 0 1000 1000" style="border: 1px solid #cccccc;" preserveAspectRatio="xMinYMin">
-  <circle [attr.cx]="fractalGeneratorService.a.x" [attr.cy]="fractalGeneratorService.a.y" r="2" fill="blue" />
-  <circle [attr.cx]="fractalGeneratorService.b.x" [attr.cy]="fractalGeneratorService.b.y" r="2" fill="green" />
-  <circle [attr.cx]="fractalGeneratorService.c.x" [attr.cy]="fractalGeneratorService.c.y" r="2" fill="orange" />
+    <!--<line class="fade-in=one" [attr.x1]="fractalGeneratorService.a.x"[attr.y1]="fractalGeneratorService.a.y" [attr.x2]="fractalGeneratorService.b.x" [attr.y2]="fractalGeneratorService.b.y" 
+      style="stroke:rgba(255,0,0,0.5);stroke-width:1" >
+    </line>
+    <line [attr.x1]="fractalGeneratorService.a.x"[attr.y1]="fractalGeneratorService.a.y" [attr.x2]="fractalGeneratorService.c.x" [attr.y2]="fractalGeneratorService.c.y" 
+      style="stroke:rgba(255,0,0,0.5);stroke-width:1" />
+    <line [attr.x1]="fractalGeneratorService.b.x"[attr.y1]="fractalGeneratorService.b.y" [attr.x2]="fractalGeneratorService.c.x" [attr.y2]="fractalGeneratorService.c.y" 
+      style="stroke:rgba(255,0,0,0.5);stroke-width:1" />
 
 
-  <circle *ngFor="let p of points" [attr.cx]="p.x" [attr.cy]="p.y" r="1" fill="red" />
+
+    <line [attr.x1]="fractalGeneratorService.d.x"[attr.y1]="fractalGeneratorService.d.y" [attr.x2]="fractalGeneratorService.e.x" [attr.y2]="fractalGeneratorService.e.y" style="stroke:rgb(0,255,0);stroke-width:2" />
+    <line [attr.x1]="fractalGeneratorService.d.x"[attr.y1]="fractalGeneratorService.d.y" [attr.x2]="fractalGeneratorService.f.x" [attr.y2]="fractalGeneratorService.f.y" style="stroke:rgb(0,255,0);stroke-width:2" />
+    <line [attr.x1]="fractalGeneratorService.e.x"[attr.y1]="fractalGeneratorService.e.y" [attr.x2]="fractalGeneratorService.f.x" [attr.y2]="fractalGeneratorService.f.y" style="stroke:rgb(0,255,0);stroke-width:2" />-->
+
+  <circle *ngFor="let p of points" [attr.cx]="p.x" [attr.cy]="p.y" r="1" [attr.fill]="calcRGB(p.x,p.y)" />
 </svg>
